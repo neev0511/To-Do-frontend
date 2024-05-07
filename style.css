@@ -24,6 +24,9 @@ body {
   grid-template-columns: 9fr 3fr;
   gap: 1em;
 }
+#push {
+  margin-left: -20px;
+}
 #new-task input {
   font-family: "Poppins", sans-serif;
   font-size: 1em;
@@ -90,4 +93,12 @@ body {
 }
 .completed {
   text-decoration: line-through;
+}
+@media (max-width: 400px) {
+  #push{
+    width: 50px;
+  }
+  #field {
+    width: 150px;
+  }
 }

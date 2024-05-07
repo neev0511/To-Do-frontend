@@ -45,7 +45,6 @@ const displayTasks = () => {
           removeTask(parent.id);
           parent.remove();
         });
-        displayTasks();
       });
 
       //Edit Tasks
@@ -100,6 +99,6 @@ document.querySelector("#push").addEventListener("click", () => {
       });
       newTaskInput.value = "";
     }
+    displayTasks();
   }
-  displayTasks();
 });
